@@ -14,6 +14,7 @@ const eslintConfig = [
   {
     rules: {
       "no-unused-vars": "off", // プロジェクト全体で無効化
+      "@typescript-eslint/no-unused-vars": "off", // TS用を無効化
     },
   },
 ];
