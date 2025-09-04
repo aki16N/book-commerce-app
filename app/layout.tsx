@@ -6,16 +6,6 @@ import { NextAuthProvider } from "./lib/next-auth/provider";
 import { Suspense } from "react";
 import Loading from "./loading";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 const notoSansJP = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
   subsets: ["latin"],
