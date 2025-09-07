@@ -2,8 +2,8 @@ import { getDetailBook } from "@/app/lib/microcms/client";
 import Image from "next/image";
 import React from "react";
 
-const DetailBook = async ({ params }: { params: Promise<{ id: string }> }) => {
-  const book = await getDetailBook((await params).id);
+const DetailBook = async ({ params }: { params: { id: string } }) => {
+  const book = await getDetailBook(params.id);
 
   return (
     <div className="container mx-auto p-4">
