@@ -31,7 +31,7 @@ export async function POST(request: Request, response: Response) {
         });
 
         return NextResponse.json({ checkout_url: session.url })
-    } catch(err: any) {
-        return NextResponse.json(err.message);
+    } catch(err) {
+        return NextResponse.json(err);
     }
 }
