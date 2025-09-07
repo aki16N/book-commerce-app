@@ -6,7 +6,7 @@ export async function GET(
     request: NextRequest,
     { params }: { params: { userId: string } }
 ) {
-    const userId = params.userId;
+    const {userId} = params;
 
     try {
         const purchases = await prisma.purchase.findMany({
